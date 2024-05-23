@@ -8,6 +8,7 @@ players.forEach((player) => {
       player.name === game.blackSide.name || player.name === game.whiteSide.name
     );
   });
+  player.gamesPlayed = playerGames.length;
 
   playerGames.forEach((playerGame) => {
     // adding 'won', 'draw', and 'losses' fields
